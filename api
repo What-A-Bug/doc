@@ -1,3 +1,22 @@
 https://api.darksky.net/forecast/6f250d8bae7182995eb99a0fb41f04c5/37.8267,-122.4233
 
 key:6f250d8bae7182995eb99a0fb41f04c5
+
+
+Forestcast Request:
+https://api.darksky.net/forecast/[key]/[latitude],[longitude]
+
+A Forecast Request returns the current weather conditions, a minute-by-minute forecast for the next hour (where available), an hour-by-hour forecast for the next 48 hours, and a day-by-day forecast for the next week.
+
+Example Request:
+GET https://api.darksky.net/forecast/0123456789abcdef9876543210fedcba/42.3601,-71.0589
+
+
+Time Machine Request:
+https://api.darksky.net/forecast/[key]/[latitude],[longitude],[time]
+
+A Time Machine Request returns the observed (in the past) or forecasted (in the future) hour-by-hour weather and daily weather conditions for a particular date. A Time Machine request is identical in structure to a Forecast Request, except:
+
+Example Request:
+GET https://api.darksky.net/forecast/0123456789abcdef9876543210fedcba/42.3601,-71.0589,255657600?exclude=currently,flags
+
